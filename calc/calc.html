@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator1.01</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+        <link rel="stylesheet" href="calc.css">
+        
+        <script src="calc.js" defer></script>
+    </head>
+
+    <body>
+        <center><div class="calculator">
+        <center><h1><b>ENJOY THE SIMPLE CALCULATOR</h1></b></center>
+
+        <input type="text" id="input" readonly>
+        
+        <div>
+        <button class="num" type="button" onclick="addToInput('1')">1</button>
+        <button class="num" type="button" onclick="addToInput('2')">2</button>
+        <button class="num" type="button" onclick="addToInput('3')">3</button>
+        <button class="operator" type="button" onclick="addToInput('+')">+</button>
+
+        </div>
+        
+        <div>
+        <button class="num" type="button" onclick="addToInput('4')">4</button>
+        <button class="num" type="button" onclick="addToInput('5')">5</button>
+        <button class="num" type="button" onclick="addToInput('6')">6</button>
+        <button class="operator" type="button" onclick="addToInput('-')">-</button>
+
+        </div>
+
+        <div>
+        <button class="num" type="button" onclick="addToInput('7')">7</button>
+        <button class="num" type="button" onclick="addToInput('8')">8</button>
+        <button class="num" type="button" onclick="addToInput('9')">9</button>
+        <button class="operator" type="button" onclick="addToInput('*')">*</button>
+
+        </div>
+
+        <div>
+        <button class="num0" type="button" onclick="addToInput('0')">0</button>
+        <button class="num" type="button" onclick="addToInput('.')">.</button>
+        <button class="operator" type="button" onclick="addToInput('/')">/</button>
+
+        </div>
+
+        <center><div>
+        <button class="output" type="button" onclick="clearLatest()"><</button>
+        <button class="output" type="button" onclick="clearInput()">C</button>
+        <button class="output"  type="button" onclick="calculate()">=</button>
+        </div>
+    </center>
+
+        <div></center>
+    </body>
+</html>
